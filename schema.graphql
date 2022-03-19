@@ -1,0 +1,107 @@
+scalar BigInt
+
+scalar Byte
+
+scalar Currency
+
+scalar DID
+
+scalar Date
+
+"A date-time string at UTC, such as 2007-12-03T10:15:30Z, compliant with the `date-time` format outlined in section 5.6 of the RFC 3339 profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar."
+scalar DateTime
+
+scalar Duration
+
+scalar EmailAddress
+
+scalar GUID
+
+scalar HSL
+
+scalar HSLA
+
+scalar HexColorCode
+
+scalar Hexadecimal
+
+scalar IBAN
+
+scalar IPv4
+
+scalar IPv6
+
+scalar ISBN
+
+scalar ISO8601Duration
+
+"The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)."
+scalar JSON
+
+scalar JSONObject
+
+scalar JWT
+
+scalar Latitude
+
+scalar LocalDate
+
+scalar LocalEndTime
+
+scalar LocalTime
+
+scalar Long
+
+scalar Longitude
+
+scalar MAC
+
+scalar NegativeFloat
+
+scalar NegativeInt
+
+scalar NonEmptyString
+
+scalar NonNegativeFloat
+
+scalar NonNegativeInt
+
+scalar NonPositiveFloat
+
+scalar NonPositiveInt
+
+scalar ObjectID
+
+scalar PhoneNumber
+
+scalar Port
+
+scalar PositiveFloat
+
+scalar PositiveInt
+
+scalar PostalCode
+
+scalar RGB
+
+scalar RGBA
+
+scalar SafeInt
+
+scalar Time
+
+scalar Timestamp
+
+scalar URL
+
+scalar USCurrency
+
+scalar UUID
+
+scalar UnsignedFloat
+
+scalar UnsignedInt
+
+scalar UtcOffset
+
+scalar Void
