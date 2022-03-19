@@ -38,7 +38,7 @@ NODE_ENV=development
 
 ## Note
 
-**For Database connection find the Mongo connection string found in the location in the email body.
+**For Database connection find the Mongo connection string located in the email body.
 This database was created for testing of the project only, the server hosting the mongodb instance will be destroyed after the testing process is over.**
 
 * To start app run
