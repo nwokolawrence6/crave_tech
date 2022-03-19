@@ -39,14 +39,13 @@ const CustomForm = (props: CustomFormInterface & typeof defaultProps) => {
   return (
     <>
       <Formik
-        validateOnChange={false}
         enableReinitialize={props.enableReinitialize }
         initialValues={props.initialValues}
         validationSchema={props.validationSchema}
         onSubmit={props.onSubmitFunction}>
         {({errors, setFieldValue, handleSubmit}) => (
           <Form as={FormikForm}>
-            <Title className="login100-form-title">
+            <Title>
               {props.title}
             </Title>
             {props.formInputs &&

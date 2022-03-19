@@ -53,7 +53,7 @@ const signUpGql = gql`
 `
 const Index = () => {
   const [addUser, {loading}] = useMutation(signUpGql, {
-    refetchQueries: [{query: getCurrentUser}]
+    onCompleted: ()=>window.location.reload()
   })
  return <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450, padding: 23 }}>

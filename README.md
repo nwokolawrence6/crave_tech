@@ -1,0 +1,84 @@
+# Solution for OAK'S LAB Test
+
+This solution was implemented using Graphql (Apollo)
+
+###  How to run
+
+* Open Terminal
+* Run The following command
+```
+ git clone git@github.com:nwokolawrence6/crave_tech.git
+```
+
+### To Run App
+```shell
+cd crave_tech
+```
+* Run
+```npm 
+npm install
+```
+
+## Create a file in root project directory named
+
+```shell
+touch .env.local
+```
+* Edit file using nano
+```shell
+nano .env.local 
+```
+* Add the following:
+
+```dotenv
+MONGO_URL=mongodb://localhost:27017/test_crave #replace with the connection string found in the email.
+NEXT_PUBLIC_GQL_URL=/api/graphql
+NODE_ENV=development
+```
+
+##Note
+
+**For Database connection find the Mongo connection string found in the mail
+This database was created for testing of the project only, the server hosting the mongodb instance will be destroyed after the test is completed.**
+
+* To start app run
+```npm
+ npm run dev
+```
+
+visit the link below on your browser:
+```http request
+ http://localhost:3000
+```
+
+### Login 
+
+![img.png](img.png)
+
+
+### Sign Up
+
+![img_1.png](img_1.png)
+
+#### DashBoard
+
+![img_2.png](img_2.png)
+
+* This implementation allows user to have multiple organization progress being managed at the same time, as a user you can add multiple company's
+
+After adding the organization you want to manage it will appear below
+Select the organization just added.
+
+
+# This is the progress management screen you can add multiple items in the steps as shown below
+
+![img_3.png](img_3.png)
+
+
+
+![img_4.png](img_4.png)
+
+
+Among other things you can update your password too.
+
+Happy testing

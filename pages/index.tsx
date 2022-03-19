@@ -6,7 +6,7 @@ import logo from '../client/assete/logo.svg'
 import {UserLoginValidation} from "../shared/Validations/user/userValidationSchema";
 import {gql, useMutation} from "@apollo/client";
 import {getCurrentUser} from "../client/components/Auth/CheckAuth";
-
+import {useRouter} from "next/router";
 const InputList:Array<IFormsInputs> = [
   {
     placeholder: 'Email*',
@@ -35,8 +35,14 @@ const loginGql = gql`
   }
 `
 const Login = () => {
+   const router = useRouter()
   const [login, {loading}] = useMutation(loginGql, {
-    refetchQueries:[{query:getCurrentUser}]
+    refetchQueries:[{query:getCurrentUser}],
+    onCompleted:()=> {
+      if(!router.pathname.includes("dashboard")){
+        router.push('dashboard')
+      }
+    }
   })
   return <Grid textAlign='center' style={{height: '100vh'}} verticalAlign='middle'>
     <Grid.Column style={{maxWidth: 450, padding: 23}}>
