@@ -36,10 +36,10 @@ NEXT_PUBLIC_GQL_URL=/api/graphql
 NODE_ENV=development
 ```
 
-##Note
+## Note
 
-**For Database connection find the Mongo connection string found in the mail
-This database was created for testing of the project only, the server hosting the mongodb instance will be destroyed after the test is completed.**
+**For Database connection find the Mongo connection string found in the location in the email body.
+This database was created for testing of the project only, the server hosting the mongodb instance will be destroyed after the testing process is over.**
 
 * To start app run
 ```npm
