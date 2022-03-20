@@ -21,10 +21,9 @@ class UserDataSource extends Base {
     const {email} = data
     const user: IUser = await __User.findOne({email})
     if (user) throw new ValidationError('Account Already exist')
-    const code = await this.getCodeNumber('id', __User, 'identNo')
+    const code = await this.getCodeNumber('id', __User, 'code')
     const userAccount: IUser = await __User.create({
       ...data,
-      identNo: code,
       code,
     })
     return signJWT(
