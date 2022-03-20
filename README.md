@@ -1,4 +1,4 @@
-# Solution for OAK'S LAB Test
+# Test Solution 
 
 This solution was implemented using Graphql (Apollo) and React (Next.js)
 
@@ -80,5 +80,10 @@ Select the organization just added.
 
 
 Among other things you can update your password too.
+
+#### Todos 
+- Update Page layout for a cleaner ui structure code.
+- separate ui front-end from back-end for a clear developer experience and easy management.
+- create a separate collection for managing company.
 
 Happy testing
