@@ -5,8 +5,7 @@ import CustomForm, {IFormsInputs} from "../client/components/CustomForm/Form";
 import logo from '../client/assete/logo.svg'
 import {UserSignUpValidator} from "../shared/Validations/user/userValidationSchema";
 import {gql, useMutation} from "@apollo/client";
-import {getCurrentUser} from "../client/components/Auth/CheckAuth";
-
+import {useRouter} from "next/router";
 const InputList:Array<IFormsInputs> = [
   {
     placeholder: 'Email',
@@ -52,8 +51,9 @@ const signUpGql = gql`
   }
 `
 const Index = () => {
+  const router = useRouter()
   const [addUser, {loading}] = useMutation(signUpGql, {
-    onCompleted: ()=>window.location.reload()
+    onCompleted: ()=>router.push('dashboard')
   })
  return <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450, padding: 23 }}>
