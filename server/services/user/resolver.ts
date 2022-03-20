@@ -3,8 +3,6 @@ import UserDataSource from './datasource'
 import dataSource from '../../datasource'
 import { cookieOptions } from "../../tools/config";
 import ILoggedIn from '../../interfaces/AuthInterface'
-import {ObjectId} from "mongoose";
-import ProgressDataSource from "../progress/datasource";
 
 const UserMutation = {
   addUser: async (root: any, { data }: { data: any }, { dataSources, res, req }: { dataSources: typeof dataSource, req: NextApiRequest, res: NextApiResponse }) => {

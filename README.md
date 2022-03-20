@@ -1,6 +1,6 @@
 # Solution for OAK'S LAB Test
 
-This solution was implemented using Graphql (Apollo)
+This solution was implemented using Graphql (Apollo) and React (Next.js)
 
 ###  How to run
 
