@@ -85,5 +85,6 @@ Among other things you can update your password too.
 - Update Page layout for a cleaner ui structure code.
 - separate ui front-end from back-end for a clear developer experience and easy management.
 - create a separate collection for managing company.
+- Remove inline jwt rsa secret key and it to env
 
 Happy testing
